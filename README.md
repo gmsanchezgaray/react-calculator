@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+[![imagen-2021-03-18-110504.png](https://i.postimg.cc/mDmPBS02/imagen-2021-03-18-110504.png)](https://postimg.cc/ygS1T01w)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+| |
+| ------ |
+| Calculator with a pokedex style, built with [React](https://es.reactjs.org). I use the Hooks API for practice, such as: useState, useEffect and useContext.  |
 
-## Available Scripts
+## 🧮 Demo 
+
+>Here is a working live [Demo](https://gmsanchezgaray.github.io/react-calculator/). 💻
+
+## 📷 Previews 
+*INTRODUCIR FOTOS*
+
+## 📑 Available Scripts
+
+
+## 📑 Available Scripts
 
 In the project directory, you can run:
 
@@ -38,7 +50,7 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
+#
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

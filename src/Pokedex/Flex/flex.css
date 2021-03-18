@@ -1,0 +1,76 @@
+/*
+ * ─── FLEX ───────────────────────────────────────────────────────────────────────
+ */
+
+#flex {
+  position: relative;
+  height: 418px;
+  width: 46px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dc0a2d;
+  box-shadow: 0 3px 0 2px #89061c;
+  border-radius: 4px;
+}
+
+#flex::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-color: #89061c;
+  height: 100%;
+  width: 10px;
+  border-radius: 0 6px 6px 0;
+}
+
+.flex-short {
+  height: 39px;
+  width: 100%;
+  background-color: #dc0a2d;
+  border: 2px solid #89061c;
+  border-radius: 4px;
+}
+
+.flex-short::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  background-color: #deb4bb;
+  height: 35px;
+  width: 8px;
+}
+
+.flex-short::after {
+  content: "";
+  position: absolute;
+  left: 25px;
+  background-color: #dd546b;
+  height: 35px;
+  width: 4px;
+}
+
+.flex-long {
+  height: 345px;
+  width: 100%;
+  background-color: #dc0a2d;
+  border: 2px solid #89061c;
+  border-radius: 4px;
+}
+
+.flex-long::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  background-color: #deb4bb;
+  height: 336px;
+  width: 8px;
+}
+
+.flex-long::after {
+  content: "";
+  position: absolute;
+  left: 25px;
+  background-color: #dd546b;
+  height: 336px;
+  width: 4px;
+}

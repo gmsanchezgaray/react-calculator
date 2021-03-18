@@ -1,0 +1,124 @@
+/*
+ * ─── RIGHT PART ─────────────────────────────────────────────────────────────────
+ */
+
+#right-part {
+  position: relative;
+  width: 325px;
+  height: 425px;
+  display: flex;
+  justify-content: center;
+  background-color: #dc0a2d;
+  box-shadow: 0 3px 0 2px #89061c;
+
+  clip-path: polygon(0 0, 37% 0, 71% 15%, 105% 15%, 105% 105%, 0 105%);
+  border-radius: 8px 0 20px 20px;
+}
+
+.stroke-right {
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+
+/* form { */
+.wrapper-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 207px;
+  margin-bottom: 20px;
+  z-index: 15;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: 48px 48px 48px 48px;
+  grid-template-rows: 48px 48px 48px 48px 48px;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-top: 5px;
+}
+
+.buttons-container .buttons-operations {
+  background-color: #2b2b2b;
+  color: #dedede;
+}
+
+.buttons-container .button-result {
+  grid-row-start: span 2;
+  background-color: #f7dc1f;
+  color: #a18f11;
+}
+
+.buttons-container .buttons-action {
+  background-color: #dedede;
+}
+
+/* form button { */
+.wrapper-right button {
+  background-color: #28aafd;
+  outline: none;
+  color: #0c6689;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+/*?----------------  Display --------------------*/
+#show {
+  position: relative;
+  background-color: #2b2b2b;
+  outline: none;
+  color: #dedede;
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  border: inset #2b2b2b;
+}
+
+.caret-cursor {
+  position: absolute;
+  font-family: "Digital", monospace;
+  font-size: 2.5rem;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #dedede;
+  width: 100%;
+  height: 48px;
+  margin: 0;
+}
+
+.caret-cursor-on {
+  right: 24px;
+}
+
+.caret-cursor-on::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -20px;
+  height: 65%;
+  width: 16px;
+  background-color: #dedede;
+  animation: blink 0.8s infinite;
+}
+
+.caret-cursor-off {
+  right: 0px;
+}
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #dedede;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

@@ -10,8 +10,8 @@
 
 ## 💻 Set up
 ```
-git clone https://github.com/kentcdodds/react-fundamentals.git 
-cd react-fundamentals 
+git clone https://github.com/gmsanchezgaray/react-calculator.git 
+cd react-calculator
 npm start
 ```
 

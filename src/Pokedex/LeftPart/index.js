@@ -1,11 +1,12 @@
-import "../LeftPart/leftPart.css";
-
+import React from "react";
 import stroke from "../LeftPart/stroke-left.svg";
 import StatusScreen from "./StatusScreen";
 import Pikachu from "./Pikachu";
 import LedIndicators from "./LedIndicators";
 
-export default function LeftPart() {
+import "../LeftPart/leftPart.css";
+
+const LeftPart = () => {
   return (
     <div id="left-part">
       <div className="shadow-top"></div>
@@ -34,4 +35,5 @@ export default function LeftPart() {
       </div>
     </div>
   );
-}
+};
+export default LeftPart;

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-
 import PokedexContext from "../../context";
+
+import iddleImg from "../LeftPart/idle.jpg";
 
 const Buttons = () => {
   const {
@@ -58,7 +59,7 @@ const Buttons = () => {
     setDisplay("");
     setRedLed(false);
     setMessagePikachu("Calculate something");
-    setPikachuFace("static/media/idle.424d7b6d.jpg");
+    setPikachuFace(iddleImg);
     document
       .querySelector(".caret-cursor")
       .classList.remove("caret-cursor-off");

@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import PokedexContext from "./index";
 
-export default function PokedexProvider({ children }) {
+const PokedexProvider = ({ children }) => {
   const [display, setDisplay] = useState("");
   const [messagePikachu, setMessagePikachu] = useState("Calculate something");
   const [pikachuFace, setPikachuFace] = useState(
@@ -57,12 +57,6 @@ export default function PokedexProvider({ children }) {
       void document.querySelector(".caret-cursor").offsetWidth;
       document.querySelector(".caret-cursor").classList.add("caret-cursor-off");
       setDisplay("syntax.err");
-      // // statusPikachu.src = './assets/error.jpg'; //? Status Pikachu
-      // caption.innerText = `Something it's wrong`;
-      // setTimeout(()=>{
-      //     statusPikachu.src = './assets/idle.jpg'; //? Reset the values ​​after an error.
-      //     caption.innerText = 'Calculate something'; //? Reset the values ​​after an error.
-      // },2000)
     }
   }, [redLed]);
 
@@ -70,20 +64,12 @@ export default function PokedexProvider({ children }) {
     document.querySelector(".l-yellow").classList.remove("l-yellow-on");
     void document.querySelector(".l-yellow").offsetWidth;
     document.querySelector(".l-yellow").classList.add("l-yellow-on");
-    // statusPikachu.src = './assets/waiting.jpg'; //? Status Pikachu
-    // caption.innerText = `Calculating...`;
   }, [yellowLed]);
 
   useEffect(() => {
     document.querySelector(".l-blue").classList.remove("l-blue-on");
     void document.querySelector(".l-blue").offsetWidth;
     document.querySelector(".l-blue").classList.add("l-blue-on");
-    // statusPikachu.src = './assets/success.jpg'; //? Status Pikachu
-    // caption.innerText = 'I gotcha!!!';
-    // setTimeout(()=>{
-    //     statusPikachu.src = './assets/idle.jpg'; //? Reset the values ​​after an error.
-    //     caption.innerText = 'Calculate something'; //? Reset the values ​​after an error.
-    // },1000)
   }, [blueLed]);
 
   // ────────────────────────────────────────────────────────────────────────────────
@@ -211,4 +197,6 @@ export default function PokedexProvider({ children }) {
       {children}
     </PokedexContext.Provider>
   );
-}
+};
+
+export default PokedexProvider;

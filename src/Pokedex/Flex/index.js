@@ -1,6 +1,7 @@
+import React from "react";
 import "../Flex/flex.css";
 
-export default function Flex() {
+const Flex = () => {
   return (
     <div id="flex">
       <div className="flex-short"></div>
@@ -8,4 +9,6 @@ export default function Flex() {
       <div className="flex-short"></div>
     </div>
   );
-}
+};
+
+export default Flex;

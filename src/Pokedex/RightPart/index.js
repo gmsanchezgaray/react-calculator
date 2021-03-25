@@ -9,18 +9,8 @@ import PokedexContext from "../../context";
 
 const RightPart = () => {
   const {
-    display,
     setDisplay,
-    greenLed,
-    setGreenLed,
-    yellowLed,
-    setYellowLed,
-    redLed,
-    setRedLed,
-    blueLed,
-    setBlueLed,
     attribute,
-    setAttribute,
     valuesToOperate,
     setValuesToOperate,
     readyToShow,

@@ -33,9 +33,7 @@ npm start
 
 ```
 .
-├── build
-├── node_modules
-| ├── [...]
+
 ├── public
 ├── src
 | ├── assets
